@@ -1,0 +1,78 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Estilos de la calculadora */
+.container {
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo del input de la pantalla */
+input[type="text"] {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: black;
+    color: #fff;
+}
+
+/* Estilos de las filas de botones */
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    grid-template-columns: repeat(5, 1fr); /* Crea 5 columnas de igual tamaño */
+}
+
+/* Estilos de los botones */
+input[type="button"] {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background-color: #ddd;
+}
+
+/* Estilo para los botones de operaciones */
+input[type="button"].orange {
+    background-color: #f78c2b;
+    color: #fff;
+}
+
+input[type="button"].orange:hover {
+    background-color: #e68900;
+}
+
+/* Estilos para los botones especiales */
+input[type="button"]:active {
+    background-color: #ccc;
+}
