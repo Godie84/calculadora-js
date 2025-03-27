@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Bootstrap</title>
+    <!-- Incluir Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+    <div class="container mt-5 mb-2 col-md-6 bg-info">
+        <h2 class="text-center">Formulario de Registro</h2>
+
+        <form id="myForm" name="myForm" onsubmit="return validateForm()" novalidate>
+            <!-- Nombre -->
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="name" name="name">
+                <div class="invalid-feedback">El nombre es obligatorio.</div>
+            </div>
+
+            <!-- Correo electrónico -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico:</label>
+                <input type="email" class="form-control" id="email" name="email">
+                <div class="invalid-feedback">Por favor, ingrese un correo electrónico válido.</div>
+            </div>
+
+            <!-- Contraseña -->
+            <div class="mb-3">
+                <label for="password" class="form-label">Contraseña:</label>
+                <input type="password" class="form-control" id="password" name="password">
+                <div class="invalid-feedback">La contraseña debe tener al menos 6 caracteres.</div>
+            </div>
+
+            <!-- Confirmar Contraseña -->
+            <div class="mb-3">
+                <label for="confirmPassword" class="form-label">Confirmar Contraseña:</label>
+                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword">
+                <div class="invalid-feedback">Las contraseñas no coinciden.</div>
+            </div>
+
+            <!-- Edad -->
+            <div class="mb-3">
+                <label for="age" class="form-label">Edad:</label>
+                <input type="number" class="form-control" id="age" name="age">
+                <div class="invalid-feedback">Debe ser mayor de 18 años.</div>
+            </div>
+
+            <!-- Fecha de nacimiento -->
+            <div class="mb-3">
+                <label for="date" class="form-label">Fecha de Nacimiento:</label>
+                <input type="date" class="form-control" id="date" name="date">
+                <div class="invalid-feedback">Por favor, ingrese su fecha de nacimiento.</div>
+            </div>
+
+            <button type="submit" class="btn btn-danger mb-4">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Incluir Bootstrap JS y dependencias -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/validation.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Manipulación del DOM</title>
+    <style>
+        .img-responsive {
+            width: 100px;
+            height: 100px;
+        }
+
+        .old-div {
+            background-color: lightgrey;
+            padding: 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="title">Título de la Página</h1>
+
+    <div class="main-div" style="background-color: lightblue; padding: 20px;">
+        <p>Este es un div con fondo color azul.</p>
+    </div>
+
+    <img src="https://via.placeholder.com/150" alt="Placeholder Image" />
+
+    <div class="old-div">
+        <p>Este es un div antiguo que será eliminado.</p>
+    </div>
+
+    <button>¡Haz clic en mí!</button>
+
+    <!-- Entrada para una lista dinámica -->
+    <input type="text" id="itemInput" placeholder="Añadir un ítem">
+    <button id="addButton">Añadir a la lista</button>
+    <ul id="dynamicList"></ul>
+
+    <!-- Filtro de lista -->
+    <input type="text" id="filterInput" placeholder="Filtrar ítems">
+    <ul id="itemsList">
+        <li>Manzana</li>
+        <li>Banana</li>
+        <li>Cereza</li>
+        <li>Uva</li>
+    </ul>
+
+    <!-- Área de Drag & Drop -->
+    <div id="draggable" draggable="true"
+        style="width: 100px; height: 100px; background-color: red; color: white; text-align: center;">
+        Arrástrame
+    </div>
+    <div id="dropzone" style="width: 300px; height: 200px; background-color: lightgreen; margin-top: 20px;">
+        Suelta aquí
+    </div>
+    <script src="./js/elementos.js"></script>
+</body>
+
+</html>
