@@ -1,0 +1,10 @@
+.img-responsive {
+    width: 100px;
+    height: 100px;
+}
+
+.old-div {
+    background-color: lightgrey;
+    padding: 20px;
+    margin: 10px;
+}
